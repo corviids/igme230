@@ -1,9 +1,18 @@
 body{
     background: #fff8e7;
+    padding: 30px;
 }
-h1{
+h1, h2{
     font-family: 'Bitter', serif;
 }
-p{
+p, li{
     font-family: 'Raleway', sans-serif;
+}
+div{
+    padding: 0px 50px;
+    max-width: 1100px;
+}
+#hotelimg {
+    max-height: 300px;
+    padding: 15px;
 }
