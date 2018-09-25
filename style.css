@@ -1,18 +1,68 @@
 body{
-    background: #fff8e7;
-    padding: 30px;
+    background: #47a5e0;
+    background-image: url(inktex.jpg);
+    background-size: 100%;
+    padding: none;
+    display: block;
 }
 h1, h2{
     font-family: 'Bitter', serif;
 }
-p, li{
+p{
     font-family: 'Raleway', sans-serif;
 }
 div{
-    padding: 0px 50px;
-    max-width: 1100px;
+    background: #47a5e0;
+    max-width: 600px;
+    /* box-shadow: 5px 5px 15px #39257d; */
 }
-#hotelimg {
-    max-height: 300px;
-    padding: 15px;
+.profile{
+    display: block;
+    border-radius: 50%;
+    width: 400px;
+    margin: 0 auto;
+    /*filter: grayscale(100%);*/
 }
+.intro{
+    padding: 30px;
+}
+.drop {
+    background-color: #d3f5ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.button {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 5px 5px 15px #39257d;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.button:hover .content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.button:hover .drop {background-color: #3e8e41;}
