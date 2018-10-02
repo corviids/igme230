@@ -8,13 +8,17 @@ body{
 h1, h2{
     font-family: 'Bitter', serif;
 }
-p{
+p, a{
     font-family: 'Raleway', sans-serif;
 }
 div{
     background: #1e0377;
     max-width: 600px;
     /* box-shadow: 5px 5px 15px #39257d; */
+}
+a{
+
+    color: #d3f5ff;
 }
 .profile{
     display: block;
