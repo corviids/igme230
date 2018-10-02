@@ -1,5 +1,5 @@
 body{
-    background: #47a5e0;
+    background: #1e0377;
     background-image: url(inktex.jpg);
     background-size: 100%;
     padding: none;
@@ -12,7 +12,7 @@ p{
     font-family: 'Raleway', sans-serif;
 }
 div{
-    background: #47a5e0;
+    background: #1e0377;
     max-width: 600px;
     /* box-shadow: 5px 5px 15px #39257d; */
 }
@@ -20,15 +20,21 @@ div{
     display: block;
     border-radius: 50%;
     width: 400px;
-    margin: 0 auto;
+    margin: 30px auto;
+    
     /*filter: grayscale(100%);*/
 }
-.intro{
+#intro{
     padding: 30px;
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+    color: #d3f5ff;
 }
 .drop {
     background-color: #d3f5ff;
-    color: white;
+    width: 90px;
+    color: rgb(6, 0, 56);
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -38,6 +44,13 @@ div{
 .button {
     position: relative;
     display: inline-block;
+    margin: 30px auto;
+    background: none;
+}
+.container{
+    width: 200;
+    margin: 0 auto;
+    background: none;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -46,7 +59,7 @@ div{
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 5px 5px 15px #39257d;
+    box-shadow: 5px 5px 15px #1e0377;
     z-index: 1;
 }
 
@@ -65,4 +78,4 @@ div{
 .button:hover .content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.button:hover .drop {background-color: #3e8e41;}
+.button:hover .drop {background-color: #47a5e0;}
