@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Week 9 Homework</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+
+        html {
+            font-family: Lato;
+            font-size: 16px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px dotted black;
+            padding: 0 10px;
+        }
+
+        h1 {
+            font-weight: 900;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>My Favorites</h1>
+        <h2>My Favorite Colors</h2>
+
+        <ol id="colorsList">
+
+        </ol>
+
+        <h2>My Favorite Animals</h2>
+
+        <ol id="animalsList">
+
+        </ol>
+
+    </main>
+
+    <script>
+        "use strict";
+        let colors = ["purple", "blue", "green", "teal"];
+        let animals = ["axolotl", "nudibranch", "ocelot", "SUNBEAR", "geckos"];
+        let colorsList = document.querySelector("#colorsList");
+        let animalsList = document.querySelector("#animalsList");
+
+        function createList(listElement, array) {
+            // for every value of the array
+            for (let i = 0; i < array.length; i++) {
+                // create list item 
+                let listItem = document.createElement("li");
+                // list item is every icrememnted index within array
+                listItem.innerHTML = array[i];
+                // append list items into list element (which will be calling the HTML ol)
+                listElement.appendChild(listItem);
+            }
+
+        }
+
+        // replace 2 existing loops with 2 calls to this function
+        createList(colorsList, colors);
+        createList(animalsList, animals);
+    </script>
+
+</body>
+
+</html>
