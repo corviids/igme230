@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Documentation</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <link type="text/css" rel="stylesheet" href="../lightgallery/lightGallery.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+
+    <div id="space">
+        <div id="layer" data-depth="0.9"><img src="../parallax/stars1.png"></div>
+        <div id="layer" data-depth="0.6"><img src="../parallax/stars2.png"></div>
+        <div id="layer" data-depth="0.3"><img src="../parallax/stars3.png"></div>
+        <div id="layer" data-depth="0.2"><img src="../parallax/stars4.png"></div>
+        <div id="layer" data-depth="0.18"><img src="../parallax/galaxy1.png"></div>
+        <div id="layer" data-depth="0.14"><img src="../parallax/galaxy2.png"></div>
+        <div id="layer" data-depth="0.1"><img src="../parallax/galaxy3.png"></div>
+    </div>
+    <div id="frame">
+        <header>
+            <h1>Astriferous!</h1>
+        </header>
+        <nav>
+            <div class="menubox">
+
+                <p class="menuitem"><img src="../images/hamburger.svg"></p>
+                <ul class="submenu">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../pages/resume.html">RESUME</a></li>
+                    <li><a href="../pages/gallery.html">GALLERY</a></li>
+                    <li><a href="../pages/tenebris.html">TENEBRIS</a></li>
+                    <li><a href="../pages/doc.html">DOCUMENTATION</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="about">
+            <h2>
+                Documantation:
+            </h2>
+            <p class="desc">
+                This site was mostly an experiment to see if I could make parallax.js 
+                function as a basic background for a site, and what I could build off 
+                of that. I was heavily inspired by Heather Penn's 
+                <a href="http://www.proteansea.com/">Protean Sea</a>. 
+                I don't necessarily intend to share this site, but ideally if I fleshed 
+                it out and added my motion graphics portfolio it would be viewed by 
+                peers, employers, and potential freelance clients.</p>
+            <p class="desc">
+                My wireframes are in a sketchbook that I left in Connecticut, but as you
+                can see, the basic layout of all the pages is the same. There are three columns
+                (one for each button on the navigation below) and four rows. A header that 
+                includes a hamburger menu, content area, button navigation, and the footer.
+                On the homepage all of this is static, but on longer pages the content area 
+                can expand and allow for scrolling.
+                All colors and styles were meant to match the hope page and beetle icon. 
+                I wanted a consistent, static, small layout that was somewhat reminiscent of 
+                a HUD, with the galaxy background. (So it feels like you're looking at the site
+                through a window that leads into space)
+            </p>
+            <p class="desc">
+                Parallax was sourced from <a href="http://matthew.wagerfield.com/parallax">Matthew Wagerfield</a>,
+                and the image gallery that takes forever to load and makes the page lag like crazy
+                is called LightGallery and comes from <a href="http://sachinchoolur.github.io/lightGallery/">here.</a>
+                The rest of my content is original, but of course I spent a lot of time on W3Schools 
+                and StackOverflow when I got stuck.
+            </p>
+            <p class="desc">
+                I spent so much time on the basic requirements that I didn't get to put much 
+                energy into going "above and beyond." However, in order to achieve even my most
+                basic vision, I had to learn to implement Parallax.js and use the LightGallery 
+                jQuery plugin. Both of these posed problems that compromised the rest of the page/site 
+                and took some time to alter, but in the end and despite the loading issue on the gallery
+                page, I'm satisfied with what I achieved.
+            </p>
+        </div>
+        <div id="button1" class="nav">
+            <a href="../pages/gallery.html" class="button">GALLERY</a>
+        </div>
+        <div id="button2" class="nav">
+            <a href="../pages/tenebris.html" class="button">TENEBRIS</a>
+        </div>
+        <div id="button3" class="nav">
+            <a href="../pages/resume.html" class="button">RESUME</a>
+        </div>
+        <footer>
+            By Maddy baker (c) 2019. Made using parallax.js by <a href="http://matthew.wagerfield.com/parallax">Matthew Wagerfield.</a>
+        </footer>
+</body>
+<script src="../lightgallery//lightgallery.min.js"></script>
+    <script src="../lightgallery//lg-thumbnail.min.js"></script>
+    <script src="../lightgallery/lg-fullscreen.min.js"></script>
+    <script src="../parallax/parallax.min.js"></script>
+    <script src="../main.js"></script>
+    <script>
+        var space = document.getElementById('space');
+        var parallaxInstance = new Parallax(space);
+    </script>
+</html>

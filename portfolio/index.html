@@ -4,16 +4,14 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>portfolio test</title>
+    <title>ASTRIFEROUS - Art by Maddy</title>
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link type="text/css" rel="stylesheet" href="css/lightGallery.css" />
+    <link type="text/css" rel="stylesheet" href="lightgalley/lightGallery.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
-    <script src="js/lightgallery.min.js"></script>
-    <script src="js/lg-thumbnail.min.js"></script>
-    <script src="js/lg-fullscreen.min.js"></script>
+    
 </head>
 
 <body>
@@ -37,9 +35,10 @@
                 <p class="menuitem"><img src="images/hamburger.svg"></p>
                 <ul class="submenu">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="resume.html">RESUME</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="tenebris.html">TENEBRIS</a></li>
+                    <li><a href="pages/resume.html">RESUME</a></li>
+                    <li><a href="pages/gallery.html">GALLERY</a></li>
+                    <li><a href="pages/tenebris.html">TENEBRIS</a></li>
+                    <li><a href="pages/doc.html">DOCUMENTATION</a></li>
                 </ul>
             </div>
         </nav>
@@ -49,34 +48,37 @@
             </h2>
             <p id="def"><i>ASTRIFEROUS: adj. bearing or relating to stars.</i><br></p>
             <img class="beetle" src="images/beetle.svg">
-            <p id="desc">
+            <p class="desc">
                 My name is Maddy Baker, I'm a third year New Media Design student at RIT.
-                I like to make art. most of my work is digital, but I also have experience in traditional
+                I like to make art. I do a lot of digital painting and animation, but I also have experience in traditional
                 mediums like watercolor and ink. I enjoy nature-focused content and animation.</p>
-            <p id="desc">
+            <p class="desc">
                 My personal interests include the outdoors (hiking/skiing/sailing etc.), my pet axolotl Percival (and
-                all my other fish), and making music.
+                all my other fish), and making music. Contact me at <a href = "mailto: madelynebaker@me.com">madelynebaker@me.com.</a>
             </p>
         </div>
-        <div id="button1">
-            <a href="gallery.html" class="button">GALLERY</a>
+        <div id="button1" class="nav">
+            <a href="pages/gallery.html" class="button">GALLERY</a>
         </div>
-        <div id="button2">
-            <a href="tenebris.html" class="button">TENEBRIS</a>
+        <div id="button2" class="nav">
+            <a href="pages/tenebris.html" class="button">TENEBRIS</a>
         </div>
-        <div id="button3">
-            <a href="resume.html" class="button">RESUME</a>
+        <div id="button3" class="nav" >
+            <a href="pages/resume.html" class="button">RESUME</a>
         </div>
         <footer>
-            By Maddy baker (c) 2019. Made using parallax.js by [creator].
+            By Maddy baker (c) 2019. Made using parallax.js by <a href="http://matthew.wagerfield.com/parallax">Matthew Wagerfield.</a>
         </footer>
     </div>
-    <script src="parallax.min.js"></script>
+    
+</body>
+<script src="lightgallery//lightgallery.min.js"></script>
+    <script src="lightgallery//lg-thumbnail.min.js"></script>
+    <script src="lightgallery/lg-fullscreen.min.js"></script>
+    <script src="parallax/parallax.min.js"></script>
     <script src="main.js"></script>
     <script>
         var space = document.getElementById('space');
         var parallaxInstance = new Parallax(space);
     </script>
-</body>
-
 </html>

@@ -1,18 +1,23 @@
-/* PORTFOLIO REDO CSS */
+/* for pages without parallax */
+
 body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    width: 100%;
+    position: absolute;
     background: #000066;
 }
 
+#wrapper{
+    position: fixed;
+    z-index: -99;
+}
 #space {
-    background-image: url(parallax/galaxy4.png);
+    background-image: url(../parallax/galaxy4.png);
     width: 110%;
     height: 100%;
     justify-content: center;
-    z-index: -1;
 }
 
 h1,
@@ -42,8 +47,8 @@ header {
 }
 
 header h1 {
-    position: absolute;
-    right: 270px;
+    position: relative;
+    left: 140px;
     font-size: 42px;
 }
 
@@ -54,15 +59,19 @@ nav {
 nav img {
     width: 40px;
     margin-top: 34px;
-    position: absolute;
-    right: 20px;
+    position: relative;
+    left: 220px;
 }
-
+.menubox{
+    height: 100%;
+}
 .submenu {
     list-style-type: none;
     margin: none;
     padding: none;
     display: none;
+    position: relative;
+    top: -100px;
 }
 
 .submenu li {
@@ -130,9 +139,6 @@ footer {
     padding: 16px;
     color: #71A1D6;
 }
-footer a{
-    color: #71A1D6;
-}
 
 #frame {
     height: 100vh;
@@ -145,11 +151,9 @@ footer a{
         "footer footer footer";
     grid-template-rows: 120px 1fr 70px 50px;
     grid-template-columns: 1fr 1fr 1fr;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    margin: 0 auto;
+    z-index: 99;
+
 }
 
 .menubox a:link,
@@ -165,47 +169,21 @@ a:link, a:visited{
     text-decoration: none;
 }
 
-/* gallery */
+.picturebox{
+    max-width: 100%;
+}
 
-#projects {
+.picturebox img{
+    width: 100%;
+}
+
+#shrooms{
     display: flex;
     justify-content: space-between;
 }
 
 .icon {
     padding-top: 70px;
-    width: 200px;
-    transition: transform .2s;
-}
-
-.icon:hover {
-    transform: scale(1.1);
-}
-
-#moreimages {
-    display: flex;
-    justify-content: space-around;
-    height: 100px;
-    width: 100%;
-    margin-top: 60px;
-}
-
-#lightgallery {
-    display: flex;
-    justify-content: space-around;
-    height: 35px;
-    width: 100%;
-    margin-top: 100px;
-}
-
-#lightgallery img {
-    padding: 3px;
-    max-height: 100%;
-    width: auto;
-    object-fit: contain;
-    transition: transform .2s;
-}
-
-#lightgallery img:hover {
-    transform: scale(1.5);
+    width: 30%;
+    height: 30%;
 }
