@@ -1,0 +1,252 @@
+/* 
+PALETTE:
+Yellow: #FFC33E
+Shadow: #A6581E
+Background: #4A0500
+Accent 1: #45D4FF
+Accent 2: #194BA8
+*/
+
+
+/* main */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #4A0500;
+    padding: 42px;
+    overflow: auto;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #FFC33E;
+    text-shadow: 2px 3px rgba(255, 177, 0, .5);
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 19px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    color: rgb(255, 195, 62);
+    margin: 0;
+}
+
+h3,
+p {
+    color: #A6581E;
+}
+
+#header {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+#title {
+    margin: 0 42px;
+}
+
+#desc,
+#goback {
+    display: flex;
+    justify-content: center;
+    transition: transform .12s;
+    overflow: hidden;
+    align-content: baseline;
+
+}
+
+#goback:hover {
+    transform: scale(1.12);
+}
+
+#artbymaddy {
+    padding-left: 22px;
+    margin: 0;
+}
+
+
+
+/* navigation */
+
+#links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 42px 0;
+}
+
+.link {
+    margin: 0 42px;
+}
+
+a {
+    color: #A6581E;
+}
+
+a:hover {
+    color: #FFC33E;
+}
+
+
+/* gallery */
+
+#gallery {
+    display: flex;
+    padding: 42px 42px;
+    max-width: 1100px;
+    /* overflow: visible; */
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+#galleryblurb {
+    text-indent: 56px;
+    max-width: 700px;
+    margin: 11px 42px;
+}
+
+#gallery h3 {
+    width: 700px;
+    text-align: center;
+}
+
+.icon {
+    width: 300px;
+    margin: 11px 11px;
+    filter: drop-shadow(3px 5px 2px #330009);
+}
+
+.iconbox {
+    transition: transform .2s;
+}
+
+.iconbox:hover {
+    transform: scale(1.12);
+}
+
+
+/* about */
+
+#about {
+    display: flex;
+    padding: 42px;
+    justify-content: center;
+}
+
+#abouttext {
+    padding-left: 56px;
+    max-width: 800px;
+}
+
+#aboutcontent {
+    text-indent: 56px;
+}
+
+
+
+/* pic pages */
+
+.picturebox {
+    margin: 22px;
+    width: 900px;
+    flex-wrap: wrap;
+    padding-bottom: 11px;
+    text-align: center;
+}
+
+.picturebox img {
+    width: 900px;
+    filter: drop-shadow(3px 5px 2px #330009);
+}
+
+.err {
+    margin: 11px 200px;
+}
+
+.shroom {
+    margin: 11px;
+    width: 250px;
+    height: 250px;
+}
+
+#shrooms {
+    display: flex;
+    padding: 0 56px;
+}
+
+
+
+/* min width for desktop: 1000px; */
+@media screen and (max-width: 1100px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    #header img {
+        width: 150px;
+    }
+    #abouttext{
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    body{
+        padding: 0;
+    }
+    
+    h1{
+        font-size: 24px;
+        padding-top: 19px;
+        margin: 0;
+    }
+    #title{
+        margin: 0 11px;
+    }
+    h2{
+        font-size: 16px;
+        padding: none;
+    }
+    #links{
+        padding: 11px;
+    }
+    .link{
+        margin: 11px;
+    }
+    #goback img{
+        width: 50px;
+    }
+    #artbymaddy{
+        padding-left: 11px;
+    }
+    #header img {
+        width: 50px;
+    }
+    #about{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100vw;
+    }
+    #aboutcontent{
+        text-indent: 24px;
+    }
+    #abouttext{
+        padding: 0;
+    }
+    #galleryblurb{
+        margin: 0;
+        padding-bottom: 11px;
+    }
+    .picturebox{
+        width: 300px;
+        margin: 0;
+    }
+    .picturebox img{
+        width: 300px;
+    }
+}

@@ -1,57 +1,77 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Art by Maddy</title>
+    <title>portfolio test</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div id="header">
-        <img src="./svgs/embellish_header_left.svg">
-        <h1 id="title">Astriferous!</h1>
-        <img src="./svgs/embellish_header_right.svg">
 
+    <div id="space">
+        <div id="layer" data-depth="0.9"><img src="parallax/stars1.png"></div>
+        <div id="layer" data-depth="0.6"><img src="parallax/stars2.png"></div>
+        <div id="layer" data-depth="0.3"><img src="parallax/stars3.png"></div>
+        <div id="layer" data-depth="0.2"><img src="parallax/stars4.png"></div>
+        <div id="layer" data-depth="0.18"><img src="parallax/galaxy1.png"></div>
+        <div id="layer" data-depth="0.14"><img src="parallax/galaxy2.png"></div>
+        <div id="layer" data-depth="0.1"><img src="parallax/galaxy3.png"></div>
     </div>
-    <div id="desc">
-        <h2><i>Art by Maddy</i></h2>
-    </div>
-    <section id="links">
-        <div class="link">
-            <p><a href="about.html">about me</a></p>
-            <img src="./svgs/embellish_link.svg">
-        </div>
-        <div class="link">
-            <p><a href="resume.html">resum&eacute;</a></p>
-            <img src="./svgs/embellish_link.svg">
-        </div>
-        <div class="link">
-            <p><a href="documentation.html">site details</a></p>
-            <img src="./svgs/embellish_link.svg">
-        </div>
-    </section>
-    <section id="gallery">
-        <div class="iconbox">
-            <a href="./slugs.html">
-                <img src="./icons/slugs.png" class="icon"></a>
-        </div>
-        <div class="iconbox">
-            <a href="./infographic.html">
-                <img src="./icons/agaric.png" class="icon"></a>
-        </div>
-        <div class="iconbox">
-            <a href="./usure.html">
-                <img src="./icons/whale.png" class="icon"></a>
-        </div>
-    </section>
-    <div id="footer">
+    <div id="frame">
+        <header>
+            <h1>Astriferous!</h1>
+        </header>
+        <nav>
+            <div class="menubox">
 
+                <p class="menuitem"><img src="images/hamburger.svg"></p>
+                <ul class="submenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="resume.html">RESUME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="tenebris.html">TENEBRIS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="about">
+            <h2>
+                Hey, I'm Maddy.
+            </h2>
+            <p id="def"><i>ASTRIFEROUS: adj. bearing or relating to stars.</i><br></p>
+            <img id="beetle" src="images/beetle.svg">
+            <p id="desc">
+                My name is Maddy Baker, I'm a third year New Media Design student at RIT.
+                I like to make art. most of my work is digital, but I also have experience in traditional
+                mediums like watercolor and ink. I enjoy nature-focused content and animation.</p>
+            <p id="desc">
+                My personal interests include the outdoors (hiking/skiing/sailing etc.), my pet axolotl Percival (and
+                all my other fish), and making music.
+            </p>
+        </div>
+        <div id="button1">
+            <a href="gallery.html" class="button">GALLERY</a>
+        </div>
+        <div id="button2">
+            <a href="tenebris.html" class="button">TENEBRIS</a>
+        </div>
+        <div id="button3">
+            <a href="resume.html" class="button">RESUME</a>
+        </div>
+        <footer>
+            By Maddy baker (c) 2019. Made using parallax.js by [creator].
+        </footer>
     </div>
+    <script src="parallax.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        var space = document.getElementById('space');
+        var parallaxInstance = new Parallax(space);
+    </script>
 </body>
 
 </html>

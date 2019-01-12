@@ -1,0 +1,70 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="space">
+        <div id="layer" data-depth="0.9"><img src="parallax/stars1.png"></div>
+        <div id="layer" data-depth="0.6"><img src="parallax/stars2.png"></div>
+        <div id="layer" data-depth="0.3"><img src="parallax/stars3.png"></div>
+        <div id="layer" data-depth="0.2"><img src="parallax/stars4.png"></div>
+        <div id="layer" data-depth="0.18"><img src="parallax/galaxy1.png"></div>
+        <div id="layer" data-depth="0.14"><img src="parallax/galaxy2.png"></div>
+        <div id="layer" data-depth="0.1"><img src="parallax/galaxy3.png"></div>
+    </div>
+    <div id="frame">
+        <header>
+            <h1>Astriferous!</h1>
+        </header>
+        <nav>
+            <div class="menubox">
+
+                <p class="menuitem"><img src="images/hamburger.svg"></p>
+                <ul class="submenu">
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="resume.html" >RESUME</a></li>
+                    <li><a href="gallery.html" >GALLERY</a></li>
+                    <li><a href="tenebris.html" >TENEBRIS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="about">
+            <h2>These are some of my projects.</h2>
+            <div id="projects">
+            
+            <div class="moreimages">
+
+            </div>
+        </div>
+        <div id="button1">
+            <a href="gallery.html" class="button">GALLERY</a>
+        </div>
+        <div id="button2">
+            <a href="tenebris.html" class="button">TENEBRIS</a>
+        </div>
+        <div id="button3">
+            <a href="resume.html" class="button">RESUME</a>
+        </div>
+        <footer>
+            By Maddy baker (c) 2019. Made using parallax.js by [creator].
+        </footer>
+    </div>
+    <script src="parallax.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        var space = document.getElementById('space');
+        var parallaxInstance = new Parallax(space);
+    </script>
+</body>
+
+</html>
