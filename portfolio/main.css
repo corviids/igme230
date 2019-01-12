@@ -1,122 +1,145 @@
 /* PORTFOLIO REDO CSS */
-
-body{
-    box-sizing: border-box;
+body {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: hidden;
     background: lightpink;
 }
-#space{
+
+#space {
     background-image: url(parallax/galaxy4.png);
     width: 110%;
     height: 100%;
     justify-content: center;
     z-index: -1;
 }
-h1, h2{
+
+h1,
+h2 {
     font-family: 'Cinzel', serif;
     color: azure;
     text-align: center;
 }
-p{
+
+p {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     font-weight: lighter;
     color: azure;
     line-height: 21px;
 }
-a{
+
+a {
     font-family: 'Cinzel', serif;
 }
 
 /** grid **/
-header{
+header {
     grid-area: header;
     text-align: center;
     padding: 16px;
 }
-header h1{
+
+header h1 {
     position: absolute;
     right: 270px;
     font-size: 42px;
 }
-nav{
+
+nav {
     grid-area: nav;
 }
-nav img{
+
+nav img {
     width: 40px;
     margin-top: 34px;
     position: absolute;
     right: 20px;
 }
-.submenu{
+
+.submenu {
     list-style-type: none;
     margin: none;
     padding: none;
     display: none;
 }
-.submenu li{
+
+.submenu li {
     background-color: #71A1D6;
     padding: .1rem;
     text-align: center;
 }
-#about{
+
+#about {
     grid-area: about;
     border: 1px solid lightblue;
     border-radius: 5px;
     padding: 30px;
     background-color: rgb(101, 166, 267, .2);
 }
-#about h2{
+
+#about h2 {
     margin: 0;
     padding: none;
 }
-.beetle{
-   width: 50%;
-   margin: 0 25%;
+
+.beetle {
+    width: 50%;
+    margin: 0 25%;
 }
-#def{
+
+#def {
     text-align: center;
 }
-#desc{
+
+#desc {
     text-indent: 24px;
 }
-#button1, #button2, #button3{
+
+#button1,
+#button2,
+#button3 {
     text-align: center;
     padding: 16px;
 }
-#button1{
+
+#button1 {
     grid-area: button1;
 }
-#button2{
+
+#button2 {
     grid-area: button2;
 }
-#button3{
+
+#button3 {
     grid-area: button3;
 }
-.button{
+
+.button {
     box-shadow: 0 0 0 10px lightblue;
     background-color: lightblue;
-    box-decoration-break: clone ;
+    box-decoration-break: clone;
     line-height: 2.2;
+    border-radius: 1px;
 }
-footer{
+
+footer {
     grid-area: footer;
     text-align: center;
     padding: 16px;
     color: lightblue;
 }
-#frame{
-    height: 100%;
+
+#frame {
+    height: 100vh;
     width: 816px;
     display: grid;
-    grid-template-areas: 
-    "header header nav" 
-    "about about about" 
-    "button1 button2 button3"
-    "footer footer footer";
+    grid-template-areas:
+        "header header nav"
+        "about about about"
+        "button1 button2 button3"
+        "footer footer footer";
     grid-template-rows: 120px 1fr 70px 50px;
     grid-template-columns: 1fr 1fr 1fr;
     position: absolute;
@@ -125,13 +148,55 @@ footer{
     right: 0;
     margin: auto;
 }
-a:link, a:visited{
+
+a:link,
+a:visited {
     color: #000066;
     font-weight: bold;
+    text-decoration: none;
 }
 
 /* gallery */
-.projects{
+#projects {
     display: flex;
     justify-content: space-between;
+}
+
+.icon {
+    padding-top: 70px;
+    width: 30%;
+    height: 30%;
+    transition: transform .2s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+#moreimages {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+#lightgallery {
+    display: flex;
+    justify-content: space-around;
+    height: 35px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#lightgallery img {
+    padding: 3px;
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    transition: transform .2s;
+}
+
+#lightgallery img:hover {
+    transform: scale(1.5);
 }
